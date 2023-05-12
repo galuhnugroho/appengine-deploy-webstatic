@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bakso Gundul</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="shorcut icon" href="assets/image/logo-bakso.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli">
+</head>
+<body>
+<header>
+    <div class="jumbotron">
+        <h1>Bakso Gundul</h1>
+        <img src="assets/image/logo-bakso.png" alt="Bakso Gundul" class="logo">
+        <p>MANTAP RASANYA, MURAH HARGANYA, TERJAMIN KUALITASNYA.</p>
+    </div>
+    <nav>
+        <a href="#home">Beranda</a>
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Produk
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="#pecengis">Gundul Pecengis</a>
+            <a href="#bersinar">Gundul Bersinar</a>
+        </div>
+        </div> 
+        <a href="#contact">Kontak</a>
+    </nav>
+</header>
+
+<main>
+    <div id="content">
+        <article id="home" class="card">
+        <h2>Hai, selamat datang👋😁</h2>
+        <img src="assets/image/welcome.png" class="featured-image" alt="Beranda">
+        <p class="paragraph"><em>Bakso Gundul</em> adalah bakso yang digemari oleh sejuta umat mulai dari orang dewasa, remaja, bahkan anak-anak. Bakso kami terbuat dari 100% Daging Sapi tanpa adanya campuran daging hewan lain, 1000% halal, dan tanpa bahan pengawet.</p>
+        <p class="paragraph">Kami secara berkala terus melakukan pengembangan terhadap produk kami. Kehangatan sapa dan keramahan menjadi ciri khas dari layanan kami, dan kami akan selalu berusaha untuk menciptakan ruang yang nyaman serasa di rumah sendiri.</p>
+        <strong class="paragraph">Selamat Menikmati!😁</strong>
+        </article>
+
+        <article id="product" class="card">
+            <h2>Produk</h2>
+            <p class="paragraph">Kami memiliki dua varian produk yang terdiri dari Bakso Gundul Pecengis dan Bakso Gundul Bersinar</p>
+            <section>
+                <h3 id="pecengis">Bakso Gundul Pecengis</h3>
+                <img src="assets/image/bakso-pecengis.jpg" class="featured-image" alt="Bakso Gundul Pecengis">
+                <table>
+                    <tr>
+                        <th>Harga</th>
+                        <td>Rp20.000,00</td>
+                    </tr>
+                </table>
+               <p class="paragraph">Bakso Gundul Pecengis memiliki isian 5 bakso yang terdiri dari 1 bakso besar dan 4 bakso biasa, 3 potongan daging, dan mie.</p>
+               <p></p>
+            </section>
+            <section>
+                <h3 id="bersinar">Bakso Gundul Bersinar</h3>
+                <img src="assets/image/bakso-bersinar.jpg" class="featured-image" alt="Bakso Gundul Bersinar">
+                <table>
+                    <tr>
+                        <th>Harga</th>
+                        <td>Rp30.000,00</td>
+                    </tr>
+                </table>
+                <p class="paragraph">Bakso Gundul Bersinar memiliki isian 8 bakso urat, 5 potongan daging, dan mie.</p>  
+            </section>
+            </article>
+
+        <article id="contact" class="card">
+        <h2>Kontak</h2>
+        <p>Untuk informasi lebih lanjut dapat menghubungi kontak dibawah:</p>
+        <table>
+            <tr>
+                <th>No. Telepon</th>
+                <td>+628123456789</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><a href="#">baksogundul@gmail.com</a></td>
+            </tr>
+        </table>
+        <br>
+        <address>
+            Pati, Jawa Tengah<br>
+            Indonesia
+        </address>
+        </article>
+    </div>
+    <aside>
+        <article class="profile card">
+            <header>
+                <h2>BIODATA</h2>
+                <figure>
+                    <img src="assets/image/profil.jpg">
+                </figure>
+            </header>
+            <section>
+                <p>Saya adalah orang yang disiplin dan bertanggung jawab atas semua hal yang saya lakukan, dan saya selalu ingin mengetahui hal-hal yang baru.</p>
+                <table>
+                    <tr>
+                        <th>Nama Lengkap</th>
+                        <td>Galuh Widy Nugroho</td>
+                    </tr>
+                    <tr>
+                        <th>Tanggal Lahir</th>
+                        <td>1 Mei 2001</td>
+                    </tr>
+                    <tr>
+                        <th>Asal Kota</th>
+                        <td>Pati</td>
+                    </tr>
+                        <tr>
+                        <th>No. Telepon</th>
+                        <td>+6282328556422</td>
+                    </tr>
+                </table>
+            </section>
+        </article>
+    </aside>
+</main>
+
+<footer>
+<p>&#169;2022 BAKSO GUNDUL All RIGHTS RESERVED</p>
+</footer>
+
+<script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+</script>
+</body>
+</html>
